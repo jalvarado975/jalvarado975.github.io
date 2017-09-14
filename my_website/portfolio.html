@@ -3,16 +3,73 @@
      <head>
        <meta charset="utf-8">
        <title>Portfolio</title>
+       <style> 
+.flex-container {
+    display: -webkit-flex;
+    display: flex;  
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.flex-container > * {
+    padding: 15px;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+}
+
+.article {
+    text-align: left;
+}
+
+header {background: #b688e0;color:white;}
+footer {background: #aaa;color:white;}
+.nav {background:#eee;}
+
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+.nav ul a {
+    text-decoration: none;
+}
+
+@media all and (min-width: 768px) {
+    .nav {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}
+    .article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
+    footer {-webkit-order:3;order:3;}
+}
+</style>
+</head>
+<body>
+
+<div class="flex-container">
+<header>
+  <h1>Portfolio</h1>
+</header>
+
+<nav class="nav">
+<ul><center>
+  <center><a href="index.html">Home</a></center>
+   <center><a href="portfolio.html">Portfolio</a></center>
+      <center><a href="about_me.html">About Me</a></center>
+      <center><a href="http://www.savewalterwhite.com/">Donate</a></center>
+
+</ul></center>
+</nav>
+
+<article class="article">
+</article>
+
+</div>
+
+</body>
      </head>
      <body>
-   <a href="index.html">Home</a>
-   <a href="portfolio.html">Portfolio</a>
-   <h1>This is a New Page</h1>
-   <img src="images/apple.jpg" height="250">
+<center><h1>This is a New Page</h1></center>
+   <center><img src="images/apple.jpg" height="250"></center>
    <br>
-   <a target="_blank" href="https://scratch.mit.edu">
-     <img src="images/scratchlogo.png" height="100">
-     <body bgcolor="#fef65b">
+     <body bgcolor="#c49fe6">
    </a>
      </body>
     </html>
